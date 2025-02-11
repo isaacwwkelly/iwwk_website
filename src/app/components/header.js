@@ -11,14 +11,11 @@ export default function Header() {
         <a href="/about" className="hover:underline hover:underline-offset-4">
           About
         </a>
-        <a href="/contact" className="hover:underline hover:underline-offset-4">
-          Contact
-        </a>
-        <a href="/why" className="hover:underline hover:underline-offset-4">
-          Why
-        </a>
         <a href="/career" className="hover:underline hover:underline-offset-4">
           Career
+        </a>
+        <a href="/contact" className="hover:underline hover:underline-offset-4">
+          Contact
         </a>
       </nav>
     </header>
