@@ -1,12 +1,8 @@
-@tailwind base;
-@tailwind components;
+@import "tailwindcss/preflight";
 @tailwind utilities;
+@import "tailwindcss";
 
-:root {
-  --background: #2b2b2b;
-  --foreground: #171717;
-}
-
+/* Define dark mode color scheme */
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #2b2b2b;
@@ -14,25 +10,22 @@
   }
 }
 
+/* Set global body styles */
 body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.global-grid {
-  display: grid;
-  grid-template-rows: 20px 1fr 20px;
-  align-items: center;
-  justify-items: center;
-  min-height: 100vh;
-  padding: 2rem 2rem 5rem;
-  gap: 4rem;
-  font-family: var(--font-geist-sans);
+/* Adjust padding for larger screens */
+@media (min-width: 640px) {
+  body {
+    margin: 4rem;
+  }
 }
 
-@media (min-width: 640px) {
-  .global-grid {
-    padding: 5rem;
+@media (max-width: 639px) {
+  body {
+    margin: 1rem;
   }
 }
