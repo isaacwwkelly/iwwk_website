@@ -1,4 +1,4 @@
-export default function Page() {
+export default function Career() {
   return (
     <div className="py-8">
       <h1 className="text-3xl sm:text-4xl sm:text-left font-bold">My Career</h1>

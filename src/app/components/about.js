@@ -1,4 +1,4 @@
-export default function Page() {
+export default function About() {
   return (
     <div className="py-8">
       <h1 className="text-3xl sm:text-4xl sm:text-left font-bold">About Me</h1>

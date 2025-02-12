@@ -20,12 +20,13 @@ body {
 /* Adjust padding for larger screens */
 @media (min-width: 640px) {
   body {
-    margin: 4rem;
+    padding-top: 2rem;
   }
 }
 
+/* Adjust padding for phone screens */
 @media (max-width: 639px) {
   body {
-    margin: 1rem;
+    padding-top: 1rem;
   }
 }
