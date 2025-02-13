@@ -18,9 +18,9 @@ const TypeWriter = ({ lines }) => {
   }, []);
 
   return (
-    <div className="mb-2.5 text-sm font-light">
+    <div className="py-2 sm:py-4 mb-2.5 text-sm font-light">
       <h2>
-        I am{" "}
+        {"> "}
         {lines[lineIndex].split("").map((letter, index) => {
           return (
             <motion.span

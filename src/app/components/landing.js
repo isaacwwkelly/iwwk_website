@@ -10,15 +10,13 @@ export default function Landing() {
       <div className="flex-grow flex flex-col justify-center w-full sm:w-144">
         <div className="object-center">
           <FadeInEffect>
-            <h1 className="align-left ">Hello,</h1>
+            <h1 className="align-left ">Hello, I'm Isaac Kelly</h1>
             <TypeWriterEffect
               lines={[
-                "Isaac Kelly.",
-                "a software engineer.",
-                "a rock climber.",
-                "a software developer.",
-                "an avid reader.",
-                "open to work.",
+                "Software Engineer II",
+                "Rock Climber",
+                "Avid Reader",
+                "Open to Work",
               ]}
             />{" "}
           </FadeInEffect>
