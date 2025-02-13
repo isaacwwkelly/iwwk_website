@@ -1,6 +1,6 @@
 export default function Header() {
   return (
-    <header className="px-1 sm:px-2 sm:justify-start">
+    <header className="h-10 sm:h-12">
       <nav className="flex gap-4 items-end">
         <a
           href="/"

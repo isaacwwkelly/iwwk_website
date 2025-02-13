@@ -1,28 +1,40 @@
+"use client";
+import Header from "./header";
+import FadeInEffect from "./framerMotion/fadeInEffect";
+import TypeWriterEffect from "./framerMotion/typewriterEffect";
+
 export default function Landing() {
   return (
-    <div>
-      {/* <div className="bg-gradient-to-b from-neutral-900  to-[#7928ca] ">
-        <div className=" text-slate-200">
-          Landing Page
+    <div className="p-2 sm:p-4 flex flex-col items-center h-screen bg-gray-800">
+      <Header />
+      <div className="flex-grow flex flex-col justify-center w-full sm:w-144">
+        <div className="object-center">
+          <FadeInEffect>
+            <h1 className="align-left ">Hello,</h1>
+            <TypeWriterEffect
+              lines={[
+                "Isaac Kelly",
+                "a software engineer",
+                "a rock climber",
+                "a software developer",
+                "an avid reader",
+                "looking for a job",
+              ]}
+            />{" "}
+          </FadeInEffect>
         </div>
-      </div> */}
-      <div className="h-screen flex flex-col justify-between bg-gray-800">
-        <table>
-          <tr>
-            <td className="align-top">
-              <h1 className="text-3xl sm:text-4xl sm:text-left font-bold">
-                Landing Page
-              </h1>
-            </td>
-          </tr>
-          <tr>
-            <td className="align-middle">
-              <div className="object-center">center of div</div>
-            </td>
-          </tr>
-        </table>
-        <div className="object-bottom">bottom of div</div>
       </div>
+      <button
+        className="object-bottom"
+        onClick={() => {
+          const element = document.getElementById("aboutMe");
+          element?.scrollIntoView({
+            behavior: "smooth",
+          });
+        }}
+      >
+        bottom of div
+      </button>
     </div>
   );
 }
