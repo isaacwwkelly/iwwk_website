@@ -2,7 +2,7 @@ import CareerCard from "./careerCard";
 
 export default function Career() {
   return (
-    <div className="p-2 sm:p-4 h-auto">
+    <div id="career" className="p-2 sm:p-4 h-auto">
       <h1>My Career</h1>
       <CareerCard
         company={"Dell Technologies"}
