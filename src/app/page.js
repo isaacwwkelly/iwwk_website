@@ -8,15 +8,17 @@ export default function Home() {
     <div>
       {/* Landing Page */}
       <Landing />
-
       {/* About */}
       <About />
-
       {/* Career */}
       <Career />
-
       {/* Contact */}
       <Contact />
+      {/* Footer */}
+      Icons by{" "}
+      <a target="_blank" href="https://icons8.com">
+        Icons8
+      </a>
     </div>
   );
 }
