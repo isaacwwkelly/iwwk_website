@@ -18,8 +18,11 @@ import climber from "../../../public/images/climber.svg";
 import hiker from "../../../public/images/hiker.svg";
 import book from "../../../public/images/book.svg";
 import controller from "../../../public/images/controller.svg";
+import movie from "../../../public/images/movie.svg";
+import dell from "../../../public/images/dell-logo.svg";
+import utsa from "../../../public/images/UTSA.svg";
 
-export default function TechIcon({ src, alt, invertToWhite }) {
+export default function TechIcon({ src, invertToWhite }) {
   const srcDict = {
     react: reactsvg,
     javascript: javascriptsvg,
@@ -40,19 +43,19 @@ export default function TechIcon({ src, alt, invertToWhite }) {
     hiker: hiker,
     book: book,
     controller: controller,
+    movie: movie,
+    dell: dell,
+    utsa: utsa,
   };
 
   const srcPath = srcDict[src];
-
   return (
-    <div className="h-10 w-10 sm:h-20 sm:w-20 m-2">
+    <div className="w-full">
       <Image
         priority
         src={srcPath}
-        alt={alt}
+        alt={`${srcPath} icon`}
         className={invertToWhite ? "invert" : ""}
-        width={40}
-        height={40}
       />
     </div>
   );

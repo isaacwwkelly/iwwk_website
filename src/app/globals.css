@@ -5,7 +5,7 @@
 /* Define dark mode color scheme */
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #2b2b2b;
+    --background: #000000;
     --foreground: #ededed;
   }
 }
