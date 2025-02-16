@@ -7,7 +7,7 @@ export default function Header() {
   };
 
   return (
-    <header className="h-10 sm:h-12">
+    <header>
       <nav className="flex gap-4 items-end">
         <a className="text-3xl sm:text-4xl font-bold">IWWK</a>
         <a

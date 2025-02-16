@@ -5,7 +5,10 @@ import TypeWriterEffect from "./framerMotion/typewriterEffect";
 
 export default function Landing() {
   return (
-    <div className="p-2 sm:p-4 flex flex-col items-center h-screen">
+    <div
+      id="landing page"
+      className="p-2 sm:p-4 flex flex-col items-center h-screen"
+    >
       <Header />
       <div className="flex-grow flex flex-col justify-center w-full sm:w-144">
         <div className="object-center">
@@ -22,7 +25,7 @@ export default function Landing() {
           </FadeInEffect>
         </div>
       </div>
-      <div className="p-4">
+      <div className="mb-4">
         <button
           className="pb-2 object-bottom bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
           onClick={() => {

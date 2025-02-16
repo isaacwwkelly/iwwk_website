@@ -3,8 +3,11 @@ import TechIcon from "./techIcon";
 
 export default function Career() {
   return (
-    <div id="career" className="p-2 sm:p-4 h-auto">
-      <h1>My Career</h1>
+    <div
+      id="career"
+      className="flex flex-col mx-auto gap-4 items-center p-4 sm:pt-24 sm:px-0 sm:w-3/4"
+    >
+      <h1 className="text-center">My Career</h1>
       <CareerCard
         techicon={<TechIcon src="dell" />}
         company={"Dell Technologies"}

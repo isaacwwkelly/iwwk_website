@@ -21,6 +21,7 @@ export default function Contact() {
     const result = await response.json();
     if (result.success) {
       console.log(result);
+      event.target.reset();
     }
   }
 
@@ -30,12 +31,13 @@ export default function Contact() {
   return (
     <div
       id="contact"
-      className="mx-auto h-screen max-w-5xl px-8 py-20 md:py-32"
+      className="h-screen flex flex-col mx-auto gap-8 items-center p-4 sm:pt-24 sm:px-0 sm:w-3/4"
     >
-      <h1 className="pb-8 text-2xl font-bold dark:text-white md:text-7xl">
-        Contact Me
-      </h1>
-      <form onSubmit={handleSubmit} className="max-w-xl space-y-8">
+      <h1>Contact Me</h1>
+      <form
+        onSubmit={handleSubmit}
+        className="flex flex-col gap-8 px-4 w-full sm:w-2/5"
+      >
         <div className="flex flex-col">
           <label htmlFor="name">Name</label>
           <input
@@ -61,13 +63,13 @@ export default function Contact() {
           <textarea
             name="message"
             required
-            rows="3"
+            rows="4"
             placeholder="Enter Message"
             className="flex min-h-[80px] w-full rounded-md border border-input dark:bg-neutral-950 px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
           ></textarea>
         </div>
         <button
-          className="w-40 border-1 bg-blue-500 hover:bg-blue-700 text-white font-bold rounded"
+          className="self-center w-40 border-1 bg-blue-500 hover:bg-blue-700 text-white font-bold rounded"
           type="submit"
         >
           Submit Form

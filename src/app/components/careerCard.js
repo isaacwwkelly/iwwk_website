@@ -12,7 +12,7 @@ export default function CareerCard({
   ));
 
   return (
-    <div className="p-4 m-4 max-w-3xl bg-white rounded-xl flex items-center">
+    <div className="p-4 sm:w-3xl bg-white rounded-xl flex items-center">
       <div>
         <div className="flex gap-2">
           <div className="content-center w-14">{techicon}</div>
