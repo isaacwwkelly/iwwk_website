@@ -50,7 +50,7 @@ export default function TechIcon({ src, invertToWhite }) {
 
   const srcPath = srcDict[src];
   return (
-    <div className="w-full">
+    <div>
       <Image
         priority
         src={srcPath}

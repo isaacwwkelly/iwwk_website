@@ -2,6 +2,7 @@ import About from "./components/about";
 import Career from "./components/career";
 import Contact from "./components/contact";
 import Landing from "./components/landing";
+import Footer from "./components/footer";
 
 export default function Home() {
   return (
@@ -15,10 +16,7 @@ export default function Home() {
       {/* Contact */}
       <Contact />
       {/* Footer */}
-      Icons by{" "}
-      <a target="_blank" href="https://icons8.com">
-        Icons8
-      </a>
+      <Footer />
     </div>
   );
 }

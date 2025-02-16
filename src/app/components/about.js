@@ -52,8 +52,8 @@ export default function About() {
           <Codesvg />
           <h2>Professional Details</h2>
         </div>
-        <div className="p-4 sm:pl-8 h-auto flex flex-col sm:flex-row justify-evenly gap-2 sm:gap-4">
-          <div id="text-box" className="sm:w-2/4 order-1 sm:order-0">
+        <div className="p-4 flex flex-col sm:flex-row justify-center items-center gap-2 sm:gap-4">
+          <div id="text-box" className="order-1 sm:order-0 sm:w-2/4 max-w-xl">
             <div className="hidden sm:flex gap-1.5 py-2">
               <Codesvg />
               <h2>Professional Details</h2>
@@ -79,16 +79,38 @@ export default function About() {
           </div>
           <div
             id="icon-box"
-            className="sm:w-2/4 h-auto flex flex-wrap content-center justify-between m-2 sm:my-0"
+            className="flex flex-col items-center px-2 w-full sm:px-0 sm:w-2/4 max-w-xl"
           >
-            {techIconInfo.map((element) => (
-              <div key={element.key} className="m-2 w-10 sm:w-20">
-                <TechIcon
-                  src={element.src}
-                  invertToWhite={element.invertToWhite}
-                />
-              </div>
-            ))}
+            <div className="flex">
+              {techIconInfo.slice(0, 5).map((element) => (
+                <div key={element.key} className="m-2 w-10 sm:w-20 sm:mx-4">
+                  <TechIcon
+                    src={element.src}
+                    invertToWhite={element.invertToWhite}
+                  />
+                </div>
+              ))}
+            </div>
+            <div className="flex">
+              {techIconInfo.slice(5, 10).map((element) => (
+                <div key={element.key} className="m-2 w-10 sm:w-20 sm:mx-4">
+                  <TechIcon
+                    src={element.src}
+                    invertToWhite={element.invertToWhite}
+                  />
+                </div>
+              ))}
+            </div>
+            <div className="flex">
+              {techIconInfo.slice(10, 15).map((element) => (
+                <div key={element.key} className="m-2 w-10 sm:w-20 sm:mx-4">
+                  <TechIcon
+                    src={element.src}
+                    invertToWhite={element.invertToWhite}
+                  />
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>
@@ -98,44 +120,42 @@ export default function About() {
           <Codesvg />
           <h2>Personal Details</h2>
         </div>
-        <div className="py-4">
-          <div className="p-4 sm:pl-8 h-auto flex flex-col sm:flex-row justify-evenly gap-2 sm:gap-4">
-            <div id="text-box" className="sm:w-2/4 order-1">
-              <div className="hidden sm:flex gap-1.5 py-2">
-                <Personsvg />
-                <h2>Personal Details</h2>
-              </div>
+        <div className="p-4 flex flex-col sm:flex-row justify-center items-center gap-2 sm:gap-4">
+          <div id="text-box" className="order-1 sm:w-2/4 max-w-xl">
+            <div className="hidden sm:flex gap-1.5 py-2">
+              <Personsvg />
+              <h2>Personal Details</h2>
+            </div>
 
-              <p className="italic">I work to live, I don't live to work</p>
-              <p className="pt-2 sm:pt-1">
-                Outside of my 9-5, I'm usually pursuing my hobbies.
-              </p>
-              <p className="pt-2 sm:pt-1">
-                I like to spend my free time with my wife, where we go rock
-                climbing, hiking, or read books together.
-              </p>
-              <p className="pt-2 sm:pt-1">
-                I also enjoy playing video games, watching movies, and
-                socializing with friends.
-              </p>
-              <p className="pt-2 sm:pt-1">
-                My wife and I also love to travel, and we try to go on at least
-                one trip a year.
-              </p>
-            </div>
-            <div
-              id="icon-box"
-              className="sm:w-2/4 h-auto flex flex-wrap content-center justify-between m-2 sm:my-0"
-            >
-              {personalIconInfo.map((element) => (
-                <div key={element.key} className="m-2 w-10 sm:w-20">
-                  <TechIcon
-                    src={element.src}
-                    invertToWhite={element.invertToWhite}
-                  />
-                </div>
-              ))}
-            </div>
+            <p className="italic">I work to live, I don't live to work</p>
+            <p className="pt-2 sm:pt-1">
+              Outside of my 9-5, I'm usually pursuing my hobbies.
+            </p>
+            <p className="pt-2 sm:pt-1">
+              I like to spend my free time with my wife, where we go rock
+              climbing, hiking, or read books together.
+            </p>
+            <p className="pt-2 sm:pt-1">
+              I also enjoy playing video games, watching movies, and socializing
+              with friends.
+            </p>
+            <p className="pt-2 sm:pt-1">
+              My wife and I also love to travel, and we try to go on at least
+              one trip a year.
+            </p>
+          </div>
+          <div
+            id="icon-box"
+            className="h-auto flex flex-wrap content-center justify-between m-2 sm:my-0 sm:w-2/4 max-w-xl"
+          >
+            {personalIconInfo.map((element) => (
+              <div key={element.key} className="m-2 w-10 sm:w-20">
+                <TechIcon
+                  src={element.src}
+                  invertToWhite={element.invertToWhite}
+                />
+              </div>
+            ))}
           </div>
         </div>
       </div>
