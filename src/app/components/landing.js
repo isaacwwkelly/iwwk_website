@@ -15,11 +15,11 @@ export default function Landing() {
           <FadeInEffect>
             <div className="flex flex-col sm:flex-row">
               <h1 className="align-left ">Hello,&nbsp;</h1>
-              <h1 className="align-left ">I'm Isaac Kelly</h1>
+              <h1 className="align-left ">I'm Isaac Kelly.</h1>
             </div>
             <TypeWriterEffect
               lines={[
-                "Software Engineer II",
+                "Software Engineer",
                 "Rock Climber",
                 "Avid Reader",
                 "Open to Work",

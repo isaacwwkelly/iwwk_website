@@ -15,8 +15,8 @@ export default function Career() {
         date={"January 2023 – February 2025"}
         bulletpoints={[
           "Maintained, updated, and improved Dell's largest internal sales application",
-          "Primarly used C#, Angular, and .NET",
           "Worked on stories and defects in an Agile framework",
+          "Primarly used C#, Angular, and .NET",
         ]}
       />
       <CareerCard

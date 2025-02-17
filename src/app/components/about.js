@@ -60,20 +60,20 @@ export default function About() {
             </div>
 
             <div className="">
-              <p className="italic">I'm a full-stack software engineer</p>
+              <p className="italic">I'm a full-stack software engineer.</p>
               <p className="pt-2 sm:pt-2">
                 I started my career at Dell Technologies as an intern and moved
-                up to Software Engineer II. At Dell, I learned valuable software
-                engineering skills and gained real-world experience accross
-                multiple teams. For more information, please see my resume.
+                up to Software Engineer II. At Dell, I learned valuable skills
+                and gained real-world experience across multiple teams. For more
+                information, please see my resume.
               </p>
               <p className="pt-2 sm:pt-2">
                 I was recently affected by Dell's work force reductions and am
-                now looking for software engineering opportunities.
+                now looking for technical job opportunities.
               </p>
               <p className="pt-2 sm:pt-2">
                 I created this website to demonstrate some of my abilities and
-                gain traction in software engineer job applications.
+                to enhance my job search.
               </p>
             </div>
           </div>
@@ -127,21 +127,21 @@ export default function About() {
               <h2>Personal Details</h2>
             </div>
 
-            <p className="italic">I work to live, I don't live to work</p>
+            <p className="italic">I work to live, I don't live to work.</p>
             <p className="pt-2 sm:pt-1">
               Outside of my 9-5, I'm usually pursuing my hobbies.
             </p>
             <p className="pt-2 sm:pt-1">
-              I like to spend my free time with my wife, where we go rock
-              climbing, hiking, or read books together.
+              I like to spend my free time rock climbing, hiking, or reading
+              with my wife.
             </p>
             <p className="pt-2 sm:pt-1">
               I also enjoy playing video games, watching movies, and socializing
               with friends.
             </p>
             <p className="pt-2 sm:pt-1">
-              My wife and I also love to travel, and we try to go on at least
-              one trip a year.
+              My wife and I also love to travel, and we try to go somewhere new
+              to us once a year.
             </p>
           </div>
           <div
