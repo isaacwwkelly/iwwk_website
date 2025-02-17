@@ -1,4 +1,4 @@
-import TechIcon from "./techIcon";
+import TechIcon from "./iconStuff/techIcon";
 
 export default function CareerCard({
   techicon,

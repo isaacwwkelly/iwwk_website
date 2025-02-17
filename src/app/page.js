@@ -1,3 +1,4 @@
+import Header from "./components/header";
 import About from "./components/about";
 import Career from "./components/career";
 import Contact from "./components/contact";
@@ -9,6 +10,8 @@ export default function Home() {
     <div>
       {/* Landing Page */}
       <Landing />
+      {/* Header Nav */}
+      <Header />
       {/* About */}
       <About />
       {/* Career */}

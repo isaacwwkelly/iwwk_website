@@ -40,7 +40,7 @@ export default function Contact() {
   return (
     <div
       id="contact"
-      className="h-screen flex flex-col mx-auto gap-8 items-center p-4 sm:pt-24 sm:px-0 sm:w-3/4"
+      className="h-screen flex flex-col mx-auto gap-8 items-center p-4 pt-16 sm:pt-32 sm:px-0 sm:w-3/4"
     >
       <h1>Contact Me</h1>
       <form

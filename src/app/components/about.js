@@ -1,5 +1,6 @@
 import { Codesvg, Personsvg } from "./littleIcons/codesvg";
-import TechIcon from "./techIcon";
+import TechIconContainer from "./iconStuff/techIconContainer";
+import TechIcon from "./iconStuff/techIcon";
 
 export default function About() {
   const techIconInfo = [
@@ -21,7 +22,7 @@ export default function About() {
   ].map((srcName, index) => {
     return {
       src: srcName,
-      key: index,
+      key: `tech-${index}`,
       invertToWhite: ["sass", "nextjs", "flask"].includes(srcName), // Example condition
     };
   });
@@ -35,7 +36,7 @@ export default function About() {
   ].map((srcName, index) => {
     return {
       src: srcName,
-      key: index,
+      key: `personal-${index}`,
       invertToWhite: true,
     };
   });
@@ -43,7 +44,7 @@ export default function About() {
   return (
     <div
       id="aboutMe"
-      className="flex flex-col mx-auto gap-4 p-4 sm:pt-24 sm:px-0 sm:w-3/4 "
+      className="flex flex-col mx-auto gap-4 p-4 pt-16 sm:pt-32 sm:px-0 sm:w-3/4 "
     >
       <h1 className="text-center">About Me</h1>
       {/* Professional Details Section */}
@@ -77,40 +78,8 @@ export default function About() {
               </p>
             </div>
           </div>
-          <div
-            id="icon-box"
-            className="flex flex-col items-center px-2 w-full sm:px-0 sm:w-2/4 max-w-xl"
-          >
-            <div className="flex">
-              {techIconInfo.slice(0, 5).map((element) => (
-                <div key={element.key} className="m-2 w-10 sm:w-20 sm:mx-4">
-                  <TechIcon
-                    src={element.src}
-                    invertToWhite={element.invertToWhite}
-                  />
-                </div>
-              ))}
-            </div>
-            <div className="flex">
-              {techIconInfo.slice(5, 10).map((element) => (
-                <div key={element.key} className="m-2 w-10 sm:w-20 sm:mx-4">
-                  <TechIcon
-                    src={element.src}
-                    invertToWhite={element.invertToWhite}
-                  />
-                </div>
-              ))}
-            </div>
-            <div className="flex">
-              {techIconInfo.slice(10, 15).map((element) => (
-                <div key={element.key} className="m-2 w-10 sm:w-20 sm:mx-4">
-                  <TechIcon
-                    src={element.src}
-                    invertToWhite={element.invertToWhite}
-                  />
-                </div>
-              ))}
-            </div>
+          <div id="skills-icons" className="w-full sm:w-2/4 max-w-xl">
+            <TechIconContainer id="tech-icons" listToDisplay={techIconInfo} />
           </div>
         </div>
       </div>
@@ -146,7 +115,7 @@ export default function About() {
           </div>
           <div
             id="icon-box"
-            className="h-auto flex flex-wrap content-center justify-between m-2 sm:my-0 sm:w-2/4 max-w-xl"
+            className="h-auto flex flex-wrap flex-row sm:flex-col xl:flex-row content-center justify-between m-2 sm:my-0 sm:w-2/4 max-w-xl"
           >
             {personalIconInfo.map((element) => (
               <div key={element.key} className="m-2 w-10 sm:w-20">

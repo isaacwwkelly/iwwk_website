@@ -1,11 +1,11 @@
 import CareerCard from "./careerCard";
-import TechIcon from "./techIcon";
+import TechIcon from "./iconStuff/techIcon";
 
 export default function Career() {
   return (
     <div
       id="career"
-      className="flex flex-col mx-auto gap-4 items-center p-4 sm:pt-24 sm:px-0 sm:w-3/4"
+      className="flex flex-col mx-auto gap-4 items-center p-4 pt-16 sm:pt-32 sm:px-0 sm:w-3/4"
     >
       <h1 className="text-center">My Career</h1>
       <CareerCard

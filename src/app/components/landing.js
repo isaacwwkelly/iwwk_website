@@ -1,5 +1,4 @@
 "use client";
-import Header from "./header";
 import FadeInEffect from "./framerMotion/fadeInEffect";
 import TypeWriterEffect from "./framerMotion/typewriterEffect";
 
@@ -9,7 +8,6 @@ export default function Landing() {
       id="landing page"
       className="p-2 sm:p-4 flex flex-col items-center h-screen"
     >
-      <Header />
       <div className="flex-grow flex flex-col justify-center w-full sm:w-144">
         <div className="object-center">
           <FadeInEffect>
