@@ -7,7 +7,7 @@ export default function Landing() {
   return (
     <div
       id="landing page"
-      className="p-2 sm:p-4 flex flex-col items-center h-screen"
+      className="p-2 sm:p-4 flex flex-col items-center min-h-screen"
     >
       <Header />
       <div className="flex-grow flex flex-col justify-center w-full sm:w-144">
