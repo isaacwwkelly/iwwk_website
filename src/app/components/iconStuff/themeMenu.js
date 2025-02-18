@@ -1,19 +1,7 @@
-import * as React from "react";
 import { DropdownMenu } from "radix-ui";
-import {
-  HamburgerMenuIcon,
-  DotFilledIcon,
-  CheckIcon,
-  ChevronRightIcon,
-  MoonIcon,
-  SunIcon,
-} from "@radix-ui/react-icons";
+import { MoonIcon, SunIcon } from "@radix-ui/react-icons";
 
 export default function ThemeMenu({ theme, toggleTheme }) {
-  const [bookmarksChecked, setBookmarksChecked] = React.useState(true);
-  const [urlsChecked, setUrlsChecked] = React.useState(false);
-  const [person, setPerson] = React.useState("pedro");
-
   return (
     <DropdownMenu.Root>
       <DropdownMenu.Trigger asChild>
