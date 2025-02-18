@@ -23,7 +23,7 @@ export default function About() {
     return {
       src: srcName,
       key: `tech-${index}`,
-      invertToWhite: ["sass", "nextjs", "flask"].includes(srcName), // Example condition
+      invertToWhite: ["sass", "nextjs", "flask"].includes(srcName),
     };
   });
 
@@ -44,7 +44,7 @@ export default function About() {
   return (
     <div
       id="aboutMe"
-      className="flex flex-col mx-auto gap-4 p-4 pt-16 sm:pt-32 sm:px-0 sm:w-3/4 "
+      className="flex flex-col mx-auto gap-4 p-4 pt-16 sm:pt-32 sm:px-0 sm:w-3/4"
     >
       <h1 className="text-center">About Me</h1>
       {/* Professional Details Section */}
@@ -63,18 +63,16 @@ export default function About() {
             <div className="">
               <p className="italic">I'm a full-stack software engineer.</p>
               <p className="pt-2 sm:pt-2">
-                I started my career at Dell Technologies as an intern and moved
-                up to Software Engineer II. At Dell, I learned valuable skills
-                and gained real-world experience across multiple teams. For more
-                information, please see my resume.
+                I started my career at Dell Technologies as an intern. In the
+                last 3 years, I moved up to Software Engineer II. There, I
+                learned valuable skills and gained real-world experience across
+                multiple teams, including a team that worked on Dell's largest
+                sales application. For more information, please see my resume.
               </p>
               <p className="pt-2 sm:pt-2">
-                I was recently affected by Dell's work force reductions and am
-                now looking for technical job opportunities.
-              </p>
-              <p className="pt-2 sm:pt-2">
-                I created this website to demonstrate some of my abilities and
-                to enhance my job search.
+                I am currently looking for technical job opportunities to take
+                my career to the next level. I created this website to
+                demonstrate some of my abilities and to enhance my job search.
               </p>
             </div>
           </div>
@@ -98,7 +96,7 @@ export default function About() {
 
             <p className="italic">I work to live, I don't live to work.</p>
             <p className="pt-2 sm:pt-1">
-              Outside of my 9-5, I'm usually pursuing my hobbies.
+              Outside of work, I'm usually pursuing my hobbies.
             </p>
             <p className="pt-2 sm:pt-1">
               I like to spend my free time rock climbing, hiking, or reading

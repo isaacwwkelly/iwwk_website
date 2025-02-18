@@ -39,3 +39,13 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Light Theme */
+.light {
+  --background: 254, 250, 224;
+}
+
+/* Dark Theme */
+.dark {
+  --background: 0, 0, 0;
+}
