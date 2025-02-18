@@ -16,6 +16,12 @@ export default function Header({ theme, toggleTheme }) {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  useEffect(() => {
+    const selectedTheme = localStorage.getItem("theme") || "dark";
+    document.body.classList.add(selectedTheme);
+    toggleTheme(selectedTheme);
+  }, [toggleTheme]);
+
   const smoothScroll = (id) => {
     const element = document.getElementById(id);
     element?.scrollIntoView({

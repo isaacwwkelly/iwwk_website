@@ -9,14 +9,14 @@ import Footer from "./components/footer";
 
 export default function Home() {
   // Light or Dark theme logic
-  const [theme, setTheme] = useState(localStorage.getItem("theme") || "dark");
+  const [theme, setTheme] = useState("dark");
 
   useEffect(() => {
-    document.body.classList.add(theme);
-  }, [theme]);
+    const selectedTheme = localStorage.getItem("theme") || "dark";
+    setTheme(selectedTheme);
+  }, []);
 
-  const toggleTheme = () => {
-    const newTheme = theme === "dark" ? "light" : "dark";
+  const toggleTheme = (newTheme) => {
     document.body.classList.remove(theme);
     document.body.classList.add(newTheme);
     localStorage.setItem("theme", newTheme);
