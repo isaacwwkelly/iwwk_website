@@ -40,10 +40,7 @@ export default function TechIconContainer({ listToDisplay }) {
             .slice(rowIndex * itemsPerRow, rowIndex * itemsPerRow + itemsPerRow)
             .map((element) => (
               <div key={element.key} className="flex justify-center">
-                <TechIcon
-                  src={element.src}
-                  invertToWhite={element.invertToWhite}
-                />
+                <TechIcon src={element.src} invert={element.invert} />
               </div>
             ))}
         </div>

@@ -2,15 +2,8 @@
 import { Codesvg, Personsvg } from "./littleIcons/codesvg";
 import TechIconContainer from "./iconStuff/techIconContainer";
 import TechIcon from "./iconStuff/techIcon";
-import { useState, useEffect } from "react";
 
 export default function About() {
-  const [isDarkTheme, setIsDarkTheme] = useState("dark");
-  useEffect(() => {
-    const currentTheme = document.body.classList.contains("dark");
-    setIsDarkTheme(currentTheme);
-  }, []);
-
   const techIconInfo = [
     "react",
     "python",
@@ -31,8 +24,7 @@ export default function About() {
     return {
       src: srcName,
       key: `tech-${index}`,
-      invertToWhite:
-        isDarkTheme && ["sass", "nextjs", "flask"].includes(srcName),
+      invert: ["sass", "nextjs", "flask"].includes(srcName),
     };
   });
 
@@ -46,7 +38,7 @@ export default function About() {
     return {
       src: srcName,
       key: `personal-${index}`,
-      invertToWhite: isDarkTheme,
+      invert: true,
     };
   });
 
@@ -128,10 +120,7 @@ export default function About() {
             >
               {personalIconInfo.map((element) => (
                 <div key={element.key} className="m-2 w-10 sm:w-20">
-                  <TechIcon
-                    src={element.src}
-                    invertToWhite={element.invertToWhite}
-                  />
+                  <TechIcon src={element.src} invert={element.invert} />
                 </div>
               ))}
             </div>

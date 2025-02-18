@@ -2,6 +2,11 @@ import { DropdownMenu } from "radix-ui";
 import { MoonIcon, SunIcon } from "@radix-ui/react-icons";
 
 export default function ThemeMenu({ theme, toggleTheme }) {
+  const handleToggleTheme = (desiredTheme) => {
+    if (theme === desiredTheme) return;
+    toggleTheme();
+  };
+
   return (
     <DropdownMenu.Root>
       <DropdownMenu.Trigger asChild>
@@ -20,14 +25,14 @@ export default function ThemeMenu({ theme, toggleTheme }) {
         >
           <DropdownMenu.Item
             className="rounded text-sm text-[var(--foreground)] flex items-center gap-2 cursor-pointer"
-            onClick={toggleTheme}
+            onClick={() => handleToggleTheme("light")}
           >
             <SunIcon />
             Light
           </DropdownMenu.Item>
           <DropdownMenu.Item
             className="rounded text-sm text-[var(--foreground)] flex items-center gap-2 cursor-pointer"
-            onClick={toggleTheme}
+            onClick={() => handleToggleTheme("dark")}
           >
             <MoonIcon />
             Dark

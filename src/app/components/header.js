@@ -4,27 +4,11 @@ import ThemeMenu from "./iconStuff/themeMenu";
 
 export default function Header() {
   // Light or Dark theme logic
-  const [theme, setTheme] = useState("dark");
+  const [theme, setTheme] = useState(localStorage.getItem("theme") || "dark");
 
   useEffect(() => {
-    // If the user has selected a theme, use that
-    const selectedTheme = localStorage.getItem("theme");
-
-    if (selectedTheme) {
-      document.body.classList.add(selectedTheme);
-      setTheme(selectedTheme);
-    }
-    // Else if the users OS preferences prefers dark mode
-    else if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-      document.body.classList.add("dark");
-      setTheme("dark");
-    }
-    // Else use light mode
-    else {
-      document.body.classList.add("light");
-      setTheme("light");
-    }
-  }, []);
+    document.body.classList.add(theme);
+  }, [theme]);
 
   const toggleTheme = () => {
     const newTheme = theme === "dark" ? "light" : "dark";
