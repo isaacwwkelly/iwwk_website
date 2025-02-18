@@ -11,7 +11,7 @@ export default function ThemeMenu({ theme, toggleTheme }) {
     <DropdownMenu.Root>
       <DropdownMenu.Trigger asChild>
         <button
-          className="ml-auto bg-[var(--header-bg)] text-[var(--header-text)] border border-[var(--border-color)] px-4 py-2 rounded"
+          className="bg-[var(--header-bg)] border border-[var(--border-color)] p-2 rounded"
           aria-label="Customise options"
         >
           {theme === "dark" ? <SunIcon /> : <MoonIcon />}
@@ -20,18 +20,18 @@ export default function ThemeMenu({ theme, toggleTheme }) {
 
       <DropdownMenu.Portal>
         <DropdownMenu.Content
-          className="rounded-md p-2 shadow-lg border border-[var(--border-color)]"
+          className="rounded-md p-2 shadow-lg border border-[var(--border-color)] bg-[var(--header-bg)]"
           sideOffset={14}
         >
           <DropdownMenu.Item
-            className="rounded text-sm text-[var(--foreground)] flex items-center gap-2 cursor-pointer"
+            className="rounded text-sm text-[var(--foreground)] flex items-center gap-2 px-2 cursor-pointer"
             onClick={() => handleToggleTheme("light")}
           >
             <SunIcon />
             Light
           </DropdownMenu.Item>
           <DropdownMenu.Item
-            className="rounded text-sm text-[var(--foreground)] flex items-center gap-2 cursor-pointer"
+            className="rounded text-sm text-[var(--foreground)] flex items-center gap-2 px-2 cursor-pointer"
             onClick={() => handleToggleTheme("dark")}
           >
             <MoonIcon />

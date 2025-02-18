@@ -34,12 +34,13 @@ body {
 
 /* Light Theme */
 .light {
-  --background: #fefae0;
+  --background: #e5e5e5;
   --foreground: #000000;
-  --header-bg: #fefae0;
-  --header-text: #000000;
-  --border-color: #000000;
-  --border-width: 2px;
+  --header-bg: #ffffff;
+  --border-color: #d1d5dc;
+  --button-c: #68d8d6;
+  --button-c-hov: #07beb8;
+  --input-form-bg: #ffffff;
 }
 
 /* Dark Theme */
@@ -47,17 +48,8 @@ body {
   --background: #000000;
   --foreground: #ffffff;
   --header-bg: #333333;
-  --header-text: #ffffff;
   --border-color: #ffffff;
-  --border-width: 2px;
-}
-
-/* Red Theme */
-.redClass {
-  --background: #d90429;
-  --foreground: #283618;
-  --header-bg: #ff0000;
-  --header-text: #ffffff;
-  --border-color: #283618;
-  --border-width: 2px;
+  --button-c: #f42b03;
+  --button-c-hov: #e70e02;
+  --input-form-bg: #0b090a;
 }

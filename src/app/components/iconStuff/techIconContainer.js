@@ -9,11 +9,11 @@ export default function TechIconContainer({ listToDisplay }) {
     const updateRows = () => {
       const screenWidth = window.innerWidth;
       let rows = 3;
-      if (screenWidth >= 992) {
+      if (screenWidth >= 1280) {
         rows = 3;
-      } else if (screenWidth >= 768) {
+      } else if (screenWidth >= 992) {
         rows = 4;
-      } else if (screenWidth >= 640) {
+      } else if (screenWidth >= 768) {
         rows = 5;
       }
       setNewRows(rows);

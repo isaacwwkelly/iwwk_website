@@ -28,7 +28,7 @@ export default function Landing() {
       </div>
       <div className="mb-20 sm:mb-8">
         <button
-          className="pb-2 object-bottom bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+          className="pb-2 object-bottom bg-[var(--button-c)] hover:bg-[var(--button-c-hov)] text-white font-bold py-2 px-4 rounded"
           onClick={() => {
             const element = document.getElementById("aboutMe");
             element?.scrollIntoView({
