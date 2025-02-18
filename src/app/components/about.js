@@ -1,8 +1,16 @@
+"use client";
 import { Codesvg, Personsvg } from "./littleIcons/codesvg";
 import TechIconContainer from "./iconStuff/techIconContainer";
 import TechIcon from "./iconStuff/techIcon";
+import { useState, useEffect } from "react";
 
 export default function About() {
+  const [isDarkTheme, setIsDarkTheme] = useState("dark");
+  useEffect(() => {
+    const currentTheme = document.body.classList.contains("dark");
+    setIsDarkTheme(currentTheme);
+  }, []);
+
   const techIconInfo = [
     "react",
     "python",
@@ -23,7 +31,8 @@ export default function About() {
     return {
       src: srcName,
       key: `tech-${index}`,
-      invertToWhite: ["sass", "nextjs", "flask"].includes(srcName),
+      invertToWhite:
+        isDarkTheme && ["sass", "nextjs", "flask"].includes(srcName),
     };
   });
 
@@ -37,7 +46,7 @@ export default function About() {
     return {
       src: srcName,
       key: `personal-${index}`,
-      invertToWhite: true,
+      invertToWhite: isDarkTheme,
     };
   });
 

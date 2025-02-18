@@ -25,7 +25,7 @@ export default function Header() {
     <div id="header">
       <div className={`${isFixed ? "h-10 sm:h-16" : "hidden"}`}></div>
       <header
-        className={`w-full flex items-center h-10 justify-center sm:justify-start sm:h-16 ${isFixed ? "fixed top-0 left-0" : "relative"} bg-sky-950 z-1`}
+        className={`w-full flex items-center h-10 justify-center sm:justify-start sm:h-16 ${isFixed ? "fixed top-0 left-0" : "relative"} bg-[var(--header-bg)] text-[var(--header-text)] z-1`}
       >
         <nav className="flex gap-4 items-end sm:pl-4">
           <a
