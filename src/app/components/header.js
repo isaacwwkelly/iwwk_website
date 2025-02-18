@@ -2,22 +2,7 @@
 import { useEffect, useState } from "react";
 import ThemeMenu from "./iconStuff/themeMenu";
 
-export default function Header() {
-  // Light or Dark theme logic
-  const [theme, setTheme] = useState(localStorage.getItem("theme") || "dark");
-
-  useEffect(() => {
-    document.body.classList.add(theme);
-  }, [theme]);
-
-  const toggleTheme = () => {
-    const newTheme = theme === "dark" ? "light" : "dark";
-    document.body.classList.remove(theme);
-    document.body.classList.add(newTheme);
-    localStorage.setItem("theme", newTheme);
-    setTheme(newTheme);
-  };
-
+export default function Header({ theme, toggleTheme }) {
   // Moving header nav logic
   const [isFixed, setIsFixed] = useState(false);
 

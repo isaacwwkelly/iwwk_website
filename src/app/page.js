@@ -1,3 +1,5 @@
+"use client";
+import { useEffect, useState } from "react";
 import Header from "./components/header";
 import About from "./components/about";
 import Career from "./components/career";
@@ -6,14 +8,29 @@ import Landing from "./components/landing";
 import Footer from "./components/footer";
 
 export default function Home() {
+  // Light or Dark theme logic
+  const [theme, setTheme] = useState(localStorage.getItem("theme") || "dark");
+
+  useEffect(() => {
+    document.body.classList.add(theme);
+  }, [theme]);
+
+  const toggleTheme = () => {
+    const newTheme = theme === "dark" ? "light" : "dark";
+    document.body.classList.remove(theme);
+    document.body.classList.add(newTheme);
+    localStorage.setItem("theme", newTheme);
+    setTheme(newTheme);
+  };
+
   return (
     <div>
       {/* Landing Page */}
       <Landing />
       {/* Header Nav */}
-      <Header />
+      <Header theme={theme} toggleTheme={toggleTheme} />
       {/* About */}
-      <About />
+      <About theme={theme} />
       {/* Career */}
       <Career />
       {/* Contact */}

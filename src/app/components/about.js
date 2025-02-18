@@ -3,7 +3,7 @@ import { Codesvg, Personsvg } from "./littleIcons/codesvg";
 import TechIconContainer from "./iconStuff/techIconContainer";
 import TechIcon from "./iconStuff/techIcon";
 
-export default function About() {
+export default function About({ theme }) {
   const techIconInfo = [
     "react",
     "python",
@@ -24,7 +24,7 @@ export default function About() {
     return {
       src: srcName,
       key: `tech-${index}`,
-      invert: ["sass", "nextjs", "flask"].includes(srcName),
+      invert: ["sass", "nextjs", "flask"].includes(srcName) && theme === "dark",
     };
   });
 
@@ -38,7 +38,7 @@ export default function About() {
     return {
       src: srcName,
       key: `personal-${index}`,
-      invert: true,
+      invert: true && theme === "dark",
     };
   });
 

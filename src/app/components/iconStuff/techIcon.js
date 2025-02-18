@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import reactsvg from "../../../../public/images/react.svg";
 import pythonsvg from "../../../../public/images/python.svg";
@@ -21,8 +22,9 @@ import controller from "../../../../public/images/controller.svg";
 import movie from "../../../../public/images/movie.svg";
 import dell from "../../../../public/images/dell-logo.svg";
 import utsa from "../../../../public/images/UTSA.svg";
+import { useEffect, useState } from "react";
 
-export default function TechIcon({ src, invertToWhite }) {
+export default function TechIcon({ src, invert }) {
   const srcDict = {
     react: reactsvg,
     javascript: javascriptsvg,
@@ -47,15 +49,28 @@ export default function TechIcon({ src, invertToWhite }) {
     dell: dell,
     utsa: utsa,
   };
+  const [isDarkMode, setIsDarkMode] = useState(false);
+
+  useEffect(() => {
+    const handleDarkModeChange = () => {
+      setIsDarkMode(document.body.className.includes("dark"));
+    };
+
+    handleDarkModeChange(); // Set initial state
+    document.body.addEventListener("classChange", handleDarkModeChange);
+
+    return () => {
+      document.body.removeEventListener("classChange", handleDarkModeChange);
+    };
+  }, []);
 
   const srcPath = srcDict[src];
   return (
     <Image
       priority
       src={srcPath}
-      alt={`${srcPath} icon`}
-      className={`w-12 h-12 sm:w-16 sm:h-16  xl:w-20 xl:h-20 ${invertToWhite ? "invert" : ""}`}
-      as="image"
+      alt={`${src} icon`}
+      className={`w-12 h-12 sm:w-16 sm:h-16 xl:w-20 xl:h-20 ${invert ? "invert" : ""}`}
     />
   );
 }
