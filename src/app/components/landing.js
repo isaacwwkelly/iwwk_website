@@ -1,40 +1,19 @@
 "use client";
 import FadeInEffect from "./framerMotion/fadeInEffect";
 import TypeWriterEffect from "./framerMotion/typewriterEffect";
-import { useEffect, useState } from "react";
 
 export default function Landing() {
-  const [theme, setTheme] = useState("dark");
-  useEffect(() => {
-    localStorage.setItem("theme", "light");
-
-    // If the user has selected a theme, use that
-    const selectedTheme = localStorage.getItem("theme");
-
-    if (selectedTheme) {
-      document.body.classList.add(selectedTheme);
-    }
-    // Else if the users OS preferences prefers dark mode
-    else if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-      document.body.classList.add("dark");
-    }
-    // Else use light mode
-    else {
-      document.body.classList.add("light");
-    }
-  }, []);
-
   return (
     <div
       id="landing page"
-      className="p-2 sm:p-4 flex flex-col items-center h-screen"
+      className="bg-[var(--background)] p-2 sm:p-4 flex flex-col items-center h-screen"
     >
       <div className="flex-grow flex flex-col justify-center w-full sm:w-144">
         <div className="object-center">
           <FadeInEffect>
             <div className="flex flex-col sm:flex-row">
-              <h1 className="align-left ">Hello,&nbsp;</h1>
-              <h1 className="align-left ">I'm Isaac Kelly.</h1>
+              <h1 className="align-left">Hello,&nbsp;</h1>
+              <h1 className="align-left">I'm Isaac Kelly.</h1>
             </div>
             <TypeWriterEffect
               lines={[
@@ -43,7 +22,7 @@ export default function Landing() {
                 "Avid Reader",
                 "Open to Work",
               ]}
-            />{" "}
+            />
           </FadeInEffect>
         </div>
       </div>
