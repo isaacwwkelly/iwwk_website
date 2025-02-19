@@ -1,5 +1,5 @@
 "use client";
-import { Codesvg, Personsvg } from "./littleIcons/codesvg";
+import { Codesvg, Personsvg } from "./iconStuff/codesvg";
 import TechIconContainer from "./iconStuff/techIconContainer";
 import TechIcon from "./iconStuff/techIcon";
 

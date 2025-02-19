@@ -133,7 +133,7 @@ export default function Contact() {
 
               <button
                 type="submit"
-                className="w-full max-w-xs self-center py-4 font-semibold bg-[var(--button-c)] hover:bg-[var(--button-c-hov)] focus:outline-none focus:ring-offset-2 focus:ring focus:ring-gray-200 px-7"
+                className="w-full max-w-xs self-center py-4 font-semibold bg-[var(--button-c)] hover:bg-[var(--button-c-hov)] focus:outline-none focus:ring-offset-2 focus:ring focus:ring-gray-200 px-7 cursor-pointer"
               >
                 {isSubmitting ? (
                   <svg

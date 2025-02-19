@@ -1,6 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 import ThemeMenu from "./iconStuff/themeMenu";
+import SocialLinksMenu from "./iconStuff/socialLinksMenu";
 
 export default function Header({ theme, toggleTheme }) {
   // Fixed vs relative logic
@@ -31,29 +32,30 @@ export default function Header({ theme, toggleTheme }) {
       >
         <nav className="flex gap-4 items-end sm:pl-4">
           <a
-            className="text-2xl sm:text-4xl font-bold hover:underline hover:underline-offset-4"
+            className="text-2xl sm:text-4xl font-bold hover:underline hover:underline-offset-4 cursor-pointer"
             onClick={() => smoothScroll("landing page")}
           >
             IWWK
           </a>
           <a
-            className="hover:underline hover:underline-offset-4"
+            className="hover:underline hover:underline-offset-4 cursor-pointer"
             onClick={() => smoothScroll("aboutMe")}
           >
             About
           </a>
           <a
-            className="hover:underline hover:underline-offset-4"
+            className="hover:underline hover:underline-offset-4 cursor-pointer"
             onClick={() => smoothScroll("career")}
           >
             Career
           </a>
           <a
-            className="hover:underline hover:underline-offset-4"
+            className="hover:underline hover:underline-offset-4 cursor-pointer"
             onClick={() => smoothScroll("contact")}
           >
             Contact
           </a>
+          <SocialLinksMenu />
           <ThemeMenu theme={theme} toggleTheme={toggleTheme} />
         </nav>
       </header>
