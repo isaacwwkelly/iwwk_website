@@ -12,15 +12,21 @@ export default function Home() {
   const [theme, setTheme] = useState("dark");
 
   useEffect(() => {
-    const selectedTheme = localStorage.getItem("theme") || "dark";
-    setTheme(selectedTheme);
+    if (typeof document !== "undefined") {
+      const selectedTheme = localStorage.getItem("theme") || "dark";
+      document.body.classList.add(selectedTheme);
+      setTheme(selectedTheme);
+    }
   }, []);
 
-  const toggleTheme = (newTheme) => {
-    document.body.classList.remove(theme);
-    document.body.classList.add(newTheme);
-    localStorage.setItem("theme", newTheme);
-    setTheme(newTheme);
+  const toggleTheme = () => {
+    const newTheme = theme === "dark" ? "light" : "dark";
+    if (typeof document !== "undefined") {
+      document.body.classList.remove(theme);
+      document.body.classList.add(newTheme);
+      localStorage.setItem("theme", newTheme);
+      setTheme(newTheme);
+    }
   };
 
   return (

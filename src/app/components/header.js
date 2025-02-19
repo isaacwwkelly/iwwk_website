@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import ThemeMenu from "./iconStuff/themeMenu";
 
 export default function Header({ theme, toggleTheme }) {
-  // Moving header nav logic
+  // Fixed vs relative logic
   const [isFixed, setIsFixed] = useState(false);
 
   useEffect(() => {
@@ -15,12 +15,6 @@ export default function Header({ theme, toggleTheme }) {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-
-  useEffect(() => {
-    const selectedTheme = localStorage.getItem("theme") || "dark";
-    document.body.classList.add(selectedTheme);
-    toggleTheme(selectedTheme);
-  }, [toggleTheme]);
 
   const smoothScroll = (id) => {
     const element = document.getElementById(id);
