@@ -47,9 +47,9 @@ export default function About({ theme }) {
     <div id="aboutMe-container" className="bg-[var(--background)]">
       <div
         id="aboutMe"
-        className="mx-auto p-4 pt-16 sm:pt-32 sm:px-0 sm:w-3/4 "
+        className="mx-auto p-4 pt-16 sm:pt-32 sm:px-0 sm:w-3/4 flex justify-center"
       >
-        <div className="py-4 flex flex-col gap-4 sm:border-2 border-[var(--border-color)] shadow-md rounded-2xl">
+        <div className="py-4 max-w-7xl flex flex-col gap-4 sm:border-2 border-[var(--border-color)] shadow-md rounded-2xl ">
           <h1 className="text-center">About Me</h1>
           {/* Professional Details Section */}
           <div>
