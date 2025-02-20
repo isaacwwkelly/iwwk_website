@@ -1,4 +1,4 @@
-import TechIcon from "./iconStuff/techIcon";
+import { motion } from "framer-motion";
 
 export default function CareerCard({
   techicon,
@@ -12,7 +12,10 @@ export default function CareerCard({
   ));
 
   return (
-    <div className="p-4 w-full max-w-3xl bg-white rounded-2xl border-2 border-[var(--border-color)] shadow-lg">
+    <motion.div
+      whileHover={{ scale: 1.003 }}
+      className="p-4 w-full max-w-3xl bg-white rounded-2xl border-2 border-[var(--border-color)] shadow-lg"
+    >
       <div>
         <div className="flex gap-2">
           <div className="content-center w-14">{techicon}</div>
@@ -29,6 +32,6 @@ export default function CareerCard({
           <ul className="list-disc list-inside">{bulletPointsWithIndex}</ul>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }

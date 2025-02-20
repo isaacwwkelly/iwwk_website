@@ -11,7 +11,12 @@ export default function Career() {
         <h1 className="text-center">My Career</h1>
         <button
           className="hover:bg-[var(--bg-button-on-hov)] shadow-lg text-[var(--foreground)] px-2 py-0.5 cursor-pointer border-2 border-[var(--border-color)] rounded-lg"
-          onClick={() => window.open("/path/to/resume.pdf", "_blank")}
+          onClick={() =>
+            window.open(
+              "https://drive.google.com/file/d/15D_9ovUF-rH4iZxEX4TEg5yq_BO-Me8u/view?usp=sharing",
+              "_blank"
+            )
+          }
         >
           Link to Full Resume
         </button>
@@ -22,8 +27,9 @@ export default function Career() {
           title={"Software Engineer II"}
           date={"January 2023 – February 2025"}
           bulletpoints={[
-            "Maintained, updated, and improved Dell's largest internal sales application",
-            "Worked on stories and defects in an Agile framework",
+            "Enhanced Dell's largest sales application's quote space by improving user efficiency, resolving user interface issues, and supporting launches",
+            "Contributed to Dell's increasing revenue by supporting the sales people's needs & improving the sales application user experience",
+            "Collaborated with senior members and other teams to drive back-end API efficiency and reliability",
             "Primarly used C#, Angular, and .NET",
           ]}
         />
@@ -33,9 +39,9 @@ export default function Career() {
           title={"Software Engineer I"}
           date={"August 2021 – January 2023"}
           bulletpoints={[
-            "Created a crucial automation tool for the onboarding process of new hires",
-            "Maintained a small internal website for testing participants in certification programs",
-            "Primarily used Python, Pandas, Flask, ReactJS, and SQL",
+            "Designed a new-hire-to-job matching algorithm to assist the onboarding of large cohorts, halving the onboarding timeline",
+            "Maintained & enhanced an evaluation portal for internal trainings that thousands of employees used each year",
+            "Created & implemented automated solutions that saves team members hundreds of hours per month",
           ]}
         />
         <CareerCard
@@ -44,9 +50,9 @@ export default function Career() {
           title={"Software Engineer Intern"}
           date={"June 2020 – August 2020"}
           bulletpoints={[
-            "Processed the 100,000+ weekly search queries on support.dell.com for outliers and trends",
-            "Leveraged my analysis to identify room for improvement in the search algorithm",
-            "Primarily used Python & Pandas",
+            "Utilized language models to process 100,000+ weekly search queries (support.dell.com) for outliers & trends",
+            "Discovered improvements to the search algorithm to produce useful results for said outlier search queries",
+            "Increased customer satisfaction for customers that used unconventional search queries by 8%",
           ]}
         />
         <CareerCard

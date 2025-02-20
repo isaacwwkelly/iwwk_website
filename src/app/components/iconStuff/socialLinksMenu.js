@@ -24,7 +24,7 @@ export default function SocialLinksMenu() {
         >
           <DropdownMenu.Item className="rounded-md text-sm text-[var(--foreground)] flex items-center gap-2 px-2 py-0.5 cursor-pointer border-2 border-transparent hover:border-[var(--border-color)]">
             <a
-              href="/path/to/resume.pdf"
+              href="https://drive.google.com/file/d/15D_9ovUF-rH4iZxEX4TEg5yq_BO-Me8u/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2"
