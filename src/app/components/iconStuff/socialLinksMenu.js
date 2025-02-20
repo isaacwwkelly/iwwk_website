@@ -19,10 +19,10 @@ export default function SocialLinksMenu() {
 
       <DropdownMenu.Portal>
         <DropdownMenu.Content
-          className="rounded-md p-2 shadow-lg border border-[var(--border-color)] bg-[var(--header-bg)]"
+          className="rounded-xl p-2 shadow-lg border-2 border-[var(--border-color)] bg-[var(--header-bg)]"
           sideOffset={14}
         >
-          <DropdownMenu.Item className="rounded text-sm text-[var(--foreground)] flex items-center gap-2 px-2 py-0.5 cursor-pointer border border-transparent hover:border-[var(--border-color)]">
+          <DropdownMenu.Item className="rounded-md text-sm text-[var(--foreground)] flex items-center gap-2 px-2 py-0.5 cursor-pointer border-2 border-transparent hover:border-[var(--border-color)]">
             <a
               href="/path/to/resume.pdf"
               target="_blank"
@@ -33,7 +33,7 @@ export default function SocialLinksMenu() {
               <span>Resume</span>
             </a>
           </DropdownMenu.Item>
-          <DropdownMenu.Item className="rounded text-sm text-[var(--foreground)] flex items-center gap-2 px-2 py-0.5 mt-1 cursor-pointer border border-transparent hover:border-[var(--border-color)]">
+          <DropdownMenu.Item className="rounded-md text-sm text-[var(--foreground)] flex items-center gap-2 px-2 py-0.5 mt-1 cursor-pointer border-2 border-transparent hover:border-[var(--border-color)]">
             <a
               href="https://www.linkedin.com/in/isaacwwkelly"
               target="_blank"
@@ -44,7 +44,7 @@ export default function SocialLinksMenu() {
               <span>LinkedIn</span>
             </a>
           </DropdownMenu.Item>
-          <DropdownMenu.Item className="rounded text-sm text-[var(--foreground)] flex items-center gap-2 px-2 py-0.5 mt-1 cursor-pointer border border-transparent hover:border-[var(--border-color)]">
+          <DropdownMenu.Item className="rounded-md text-sm text-[var(--foreground)] flex items-center gap-2 px-2 py-0.5 mt-1 cursor-pointer border-2 border-transparent hover:border-[var(--border-color)]">
             <a
               href="https://github.com/isaacwwkelly"
               target="_blank"

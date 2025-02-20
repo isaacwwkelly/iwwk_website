@@ -10,7 +10,7 @@ export default function Career() {
       >
         <h1 className="text-center">My Career</h1>
         <button
-          className="bg-[var(--header-bg)] hover:bg-[var(--bg-button-on-hov)] shadow-lg text-[var(--foreground)] px-2 py-0.5 cursor-pointer border border-[var(--border-color)] rounded-md"
+          className="hover:bg-[var(--bg-button-on-hov)] shadow-lg text-[var(--foreground)] px-2 py-0.5 cursor-pointer border-2 border-[var(--border-color)] rounded-lg"
           onClick={() => window.open("/path/to/resume.pdf", "_blank")}
         >
           Link to Full Resume

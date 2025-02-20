@@ -34,10 +34,10 @@ body {
 
 /* Light Theme */
 .light {
-  --background: #e5e5e5;
+  --background: #ebeaea;
   --foreground: #000000;
   --header-bg: #ffffff;
-  --border-color: #d1d5dc;
+  --border-color: #b9bcc2;
   --button-c: #68d8d6;
   --button-c-hov: #07beb8;
   --bg-button-on-hov: #f5f5f5;

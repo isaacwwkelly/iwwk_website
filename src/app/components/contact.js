@@ -44,7 +44,7 @@ export default function Contact() {
         className="h-screen flex justify-center mx-auto p-4 pt-16 sm:pt-32"
       >
         <div className="w-full max-w-2xl flex flex-col gap-8 items-center">
-          <div className="p-4 border border-[var(--border-color)] shadow-lg w-full max-w-3xl">
+          <div className="w-full p-4 border-2 border-[var(--border-color)] shadow-md rounded-2xl">
             <h1 className="text-center">Contact Me</h1>
             <form
               onSubmit={handleSubmit(onSubmit)}
@@ -64,7 +64,7 @@ export default function Contact() {
                   type="text"
                   placeholder="..."
                   autoComplete="false"
-                  className={`w-full px-4 py-3 border-2 placeholder:text-gray-800  rounded-md outline-none bg-[var(--input-form-bg)] focus:ring-4  ${
+                  className={`w-full px-4 py-3 border-2 placeholder:text-gray-800  rounded-xl outline-none bg-[var(--input-form-bg)] focus:ring-4  ${
                     errors.name
                       ? "border-red-600 focus:border-red-600 ring-red-100"
                       : "border-gray-300 focus:border-gray-600 ring-gray-100 "
@@ -89,7 +89,7 @@ export default function Contact() {
                   placeholder="..."
                   name="email"
                   autoComplete="false"
-                  className={`w-full px-4 py-3 border-2 placeholder:text-gray-800  rounded-md outline-none bg-[var(--input-form-bg)] focus:ring-4  ${
+                  className={`w-full px-4 py-3 border-2 placeholder:text-gray-800  rounded-xl outline-none bg-[var(--input-form-bg)] focus:ring-4  ${
                     errors.email
                       ? "border-red-600 focus:border-red-600 ring-red-100"
                       : "border-gray-300 focus:border-gray-600 ring-gray-100"
@@ -114,7 +114,7 @@ export default function Contact() {
                 <textarea
                   name="message"
                   placeholder="..."
-                  className={`w-full px-4 py-3 border-2 placeholder:text-gray-800 bg-[var(--input-form-bg)] rounded-md outline-none  h-36 focus:ring-4  ${
+                  className={`w-full px-4 py-3 border-2 placeholder:text-gray-800 bg-[var(--input-form-bg)] rounded-xl outline-none  h-36 focus:ring-4  ${
                     errors.message
                       ? "border-red-600 focus:border-red-600 ring-red-100"
                       : "border-gray-300 focus:border-gray-600 ring-gray-100"
