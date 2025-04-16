@@ -27,10 +27,10 @@ export default function Career() {
           title={"Software Engineer II"}
           date={"January 2023 – February 2025"}
           bulletpoints={[
-            "Enhanced Dell's largest sales application's quote space by improving user efficiency, resolving user interface issues, and supporting launches",
-            "Contributed to Dell's increasing revenue by supporting the sales people's needs & improving the sales application user experience",
-            "Collaborated with senior members and other teams to drive back-end API efficiency and reliability",
-            "Primarly used C#, Angular, and .NET",
+            "Enhanced Dell's largest internal sales application in the quote space by improving user efficiency, back-end reliability, resolving user interface issues, and supporting launches",
+            "Contributed to Dell's increasing revenue (8% increase from FY24 to FY25) by supporting the sales department’s business requirements & improving the sales application UI/UX & functionality",
+            "Migrated from legacy systems to restructure into a micro-service and micro-frontend system design",
+            "Primarly used C#, Javascript, Angular, and ASP.NET",
           ]}
         />
         <CareerCard
@@ -39,9 +39,9 @@ export default function Career() {
           title={"Software Engineer I"}
           date={"August 2021 – January 2023"}
           bulletpoints={[
-            "Designed a new-hire-to-job matching algorithm to assist the onboarding of large cohorts, halving the onboarding timeline",
-            "Maintained & enhanced an evaluation portal for internal trainings that thousands of employees used each year",
-            "Created & implemented automated solutions that saves team members hundreds of hours per month",
+            "Designed a new-hire-to-job matching algorithm to assist the onboarding of large recent-grad new-hire cohorts, cutting out manual processes and reducing the onboarding timeline by 50%",
+            "Owned, maintained, and enhanced an internal evaluation portal, built with React Typescript and Flask (Python web framework), for trainings that 10,000 employees used annually",
+            "Created an automated matching algorithm and email solution from the ground up, saving team members 600 hours of repeatable work each quarter",
           ]}
         />
         <CareerCard
@@ -52,7 +52,7 @@ export default function Career() {
           bulletpoints={[
             "Utilized language models to process 100,000+ weekly search queries (support.dell.com) for outliers & trends",
             "Discovered improvements to the search algorithm to produce useful results for said outlier search queries",
-            "Increased customer satisfaction for customers that used unconventional search queries by 8%",
+            "Increased customer satisfaction for customers that used unconventional search queries by 9%",
           ]}
         />
         <CareerCard
