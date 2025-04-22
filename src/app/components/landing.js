@@ -17,7 +17,7 @@ export default function Landing() {
             </div>
             <TypeWriterEffect
               lines={[
-                "Software Engineer",
+                "Software Engineer II",
                 "Rock Climber",
                 "Avid Reader",
                 "Open to Work",

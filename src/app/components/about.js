@@ -68,7 +68,9 @@ export default function About({ theme }) {
                 </div>
 
                 <div className="">
-                  <p className="italic">I'm a full-stack software engineer.</p>
+                  <p className="italic">
+                    I'm a full-stack Software Engineer II.
+                  </p>
                   <p className="pt-2 md:pt-2">
                     I started my career at Dell Technologies as an intern. In
                     the last 3 years, I moved up to Software Engineer II. There,
