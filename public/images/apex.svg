@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <defs>
+    <!-- Top-Left Arm Gradient: Electric Cyan to Rich Royal Blue -->
+    <linearGradient id="tlGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0040C0" />
+      <stop offset="35%" stop-color="#00A2FF" />
+      <stop offset="85%" stop-color="#00E5FF" />
+    </linearGradient>
+
+    <!-- Top-Right Arm Gradient: Deep Navy Blue to Midnight -->
+    <linearGradient id="trGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F3895" />
+      <stop offset="60%" stop-color="#051B5C" />
+      <stop offset="100%" stop-color="#020A2E" />
+    </linearGradient>
+
+    <!-- Bottom-Left Arm Gradient: Bright Cyan to Deep Blue Edge -->
+    <linearGradient id="blGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#007CFF" />
+      <stop offset="40%" stop-color="#00D5FF" />
+      <stop offset="100%" stop-color="#0050C8" />
+    </linearGradient>
+
+    <!-- Bottom-Right Arm Gradient: Deep Navy with Shadow Edge -->
+    <linearGradient id="brGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#092B80" />
+      <stop offset="70%" stop-color="#041448" />
+      <stop offset="100%" stop-color="#01061C" />
+    </linearGradient>
+  </defs>
+
+  <!-- Top-Left Diagonal Pillar -->
+  <path d="M 36 20 
+           C 25 20, 20 28, 26 38 
+           L 90 90 
+           H 100 
+           L 46 20 Z" 
+        fill="url(#tlGrad)" />
+  <!-- Top-Left Inner Glow Highlight -->
+  <path d="M 40 20 L 98 84 H 90 L 32 30 C 27 25, 31 20, 40 20 Z" fill="#00F0FF" opacity="0.4" />
+
+  <!-- Top-Right Diagonal Pillar -->
+  <path d="M 164 20 
+           C 175 20, 180 28, 174 38 
+           L 110 90 
+           H 100 
+           L 154 20 Z" 
+        fill="url(#trGrad)" />
+
+  <!-- Bottom-Left Diagonal Pillar -->
+  <path d="M 36 180 
+           C 25 180, 20 172, 26 162 
+           L 90 110 
+           H 100 
+           L 46 180 Z" 
+        fill="url(#blGrad)" />
+
+  <!-- Bottom-Right Diagonal Pillar -->
+  <path d="M 164 180 
+           C 175 180, 180 172, 174 162 
+           L 110 110 
+           H 100 
+           L 154 180 Z" 
+        fill="url(#brGrad)" />
+</svg>

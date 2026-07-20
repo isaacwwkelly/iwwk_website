@@ -69,21 +69,16 @@ export default function About({ theme }) {
 
                 <div className="">
                   <p className="italic">
-                    I'm a full-stack Software Engineer II.
+                    I'm a full-stack Software Engineer II with five years of professional experience.
                   </p>
                   <p className="pt-2 md:pt-2">
-                    I started my career at Dell Technologies as an intern. In
-                    the last 3 years, I moved up to Software Engineer II. There,
-                    I learned valuable skills and gained real-world experience
-                    across multiple teams, including a team that worked on
-                    Dell's largest sales application. For more information,
-                    please see my resume.
+                    I currently work at Apex Fintech Solutions as a Software Engineer II building Ascend OS, Apex's cloud-native ecosystem. There, I own core fintech application UI/UX, migrate legacy systems to modern frameworks, and pioneer AI-driven developer workflows (agentic skills & automated commands) that boost team throughput.
                   </p>
                   <p className="pt-2 md:pt-2">
-                    I am currently open to technical job opportunities to take
-                    my career to the next level. I created this website to
-                    demonstrate some of my abilities and to enhance my job
-                    search.
+                    Previously, I spent nearly 4 years at Dell Technologies advancing from Intern to Software Engineer II—enhancing sales applications, modernizing micro-frontends and microservices, and engineering automated onboarding algorithms.
+                  </p>
+                  <p className="pt-2 md:pt-2">
+                    I am currently open to technical job opportunities to take my career to the next level. I created this website to demonstrate some of my abilities and to enhance my job search.
                   </p>
                 </div>
               </div>

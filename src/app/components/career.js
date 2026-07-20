@@ -13,7 +13,7 @@ export default function Career() {
           className="hover:bg-[var(--bg-button-on-hov)] shadow-lg text-[var(--foreground)] px-2 py-0.5 cursor-pointer border-2 border-[var(--border-color)] rounded-lg"
           onClick={() =>
             window.open(
-              "https://drive.google.com/file/d/15D_9ovUF-rH4iZxEX4TEg5yq_BO-Me8u/view?usp=sharing",
+              "https://drive.google.com/file/d/10kaB53cURhF7okQ6WuRiWPnti2PPHPeQ/view?usp=sharing",
               "_blank"
             )
           }
@@ -21,6 +21,28 @@ export default function Career() {
           Link to Full Resume
         </button>
 
+        <CareerCard
+          techicon={<TechIcon src="apex" />}
+          company={"Apex Fintech Solutions"}
+          title={"Software Engineer II"}
+          date={"June 2025 – Present"}
+          bulletpoints={[
+            "Front End developer for Ascend OS - Apex’s cloud-native ecosystem purpose-built for fintechs, broker-dealers, and wealth management firms. Introduced many Claude Code skills to the UI Engineering org that streamlined the ticket to PR process, increasing throughput by 60%",
+            "Refined Ascend’s UI/UX with industry leading design principles",
+            "Collaborated with professional web designers",
+            "Migrated from Apex’s legacy system to the new Ascend OS system with modern frameworks",
+            {
+              text: "Personally owned the UI/UX of multiple apps within Ascend OS:",
+              subpoints: [
+                "Account Transfers",
+                "Investigations",
+                "Accounts",
+                "Case Management",
+                "Levies",
+              ],
+            },
+          ]}
+        />
         <CareerCard
           techicon={<TechIcon src="dell" />}
           company={"Dell Technologies"}

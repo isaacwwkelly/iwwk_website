@@ -22,6 +22,7 @@ import controller from "../../../../public/images/controller.svg";
 import movie from "../../../../public/images/movie.svg";
 import dell from "../../../../public/images/dell-logo.svg";
 import utsa from "../../../../public/images/UTSA.svg";
+import apex from "../../../../public/images/apex.svg";
 import { useEffect, useState } from "react";
 
 export default function TechIcon({ src, invert }) {
@@ -48,6 +49,7 @@ export default function TechIcon({ src, invert }) {
     movie: movie,
     dell: dell,
     utsa: utsa,
+    apex: apex,
   };
   const [isDarkMode, setIsDarkMode] = useState(false);
 

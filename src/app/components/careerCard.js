@@ -7,9 +7,23 @@ export default function CareerCard({
   date,
   bulletpoints,
 }) {
-  const bulletPointsWithIndex = bulletpoints.map((point, index) => (
-    <li key={index}>{point}</li>
-  ));
+  const bulletPointsWithIndex = bulletpoints.map((point, index) => {
+    if (typeof point === "object" && point !== null) {
+      return (
+        <li key={index}>
+          {point.text}
+          {point.subpoints && (
+            <ul className="list-disc list-inside pl-6 pt-1 space-y-0.5">
+              {point.subpoints.map((sub, subIndex) => (
+                <li key={subIndex}>{sub}</li>
+              ))}
+            </ul>
+          )}
+        </li>
+      );
+    }
+    return <li key={index}>{point}</li>;
+  });
 
   return (
     <motion.div
