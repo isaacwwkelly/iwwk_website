@@ -6,6 +6,7 @@ import Career from "./components/career";
 import Contact from "./components/contact";
 import Landing from "./components/landing";
 import Footer from "./components/footer";
+import SolarSystemCanvas from "./components/solarSystemCanvas";
 
 export default function Home() {
   // Light or Dark theme logic
@@ -30,9 +31,12 @@ export default function Home() {
   };
 
   return (
-    <div>
+    <div className="relative">
+      {/* Global Solar System Background */}
+      <SolarSystemCanvas theme={theme} />
+
       {/* Landing Page */}
-      <Landing />
+      <Landing theme={theme} />
       {/* Header Nav */}
       <Header theme={theme} toggleTheme={toggleTheme} />
       {/* About */}
@@ -41,6 +45,8 @@ export default function Home() {
       <Career />
       {/* Contact */}
       <Contact />
+      {/* Spacer to scroll and view the full global canvas at the bottom */}
+      <div className="h-[75vh] w-full pointer-events-none"></div>
       {/* Footer */}
       <Footer />
     </div>

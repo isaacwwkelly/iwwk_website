@@ -3,7 +3,7 @@ import TechIcon from "./iconStuff/techIcon";
 
 export default function Career() {
   return (
-    <div id="career-container" className="bg-[var(--background)]">
+    <div id="career-container" className="bg-transparent">
       <div
         id="career"
         className="flex flex-col mx-auto gap-4 items-center p-4 pt-16 sm:pt-32"

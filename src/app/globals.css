@@ -1,6 +1,6 @@
-@import "tailwindcss/preflight";
-@tailwind utilities;
-@import "tailwindcss";
+@import "tailwindcss" source(none);
+@source "..";
+
 
 /* Rules for phone screens */
 @media (max-width: 639px) {
@@ -27,7 +27,7 @@
 }
 
 body {
-  /* background: var(--background); */
+  background-color: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -37,6 +37,7 @@ body {
   --background: #ebeaea;
   --foreground: #000000;
   --header-bg: #ffffff;
+  --card-bg: rgba(255, 255, 255, 0.82);
   --border-color: #b9bcc2;
   --button-c: #68d8d6;
   --button-c-hov: #07beb8;
@@ -49,6 +50,7 @@ body {
   --background: #000000;
   --foreground: #ffffff;
   --header-bg: #333333;
+  --card-bg: rgba(20, 20, 20, 0.72);
   --border-color: #ffffff;
   --button-c: #f42b03;
   --button-c-hov: #e70e02;

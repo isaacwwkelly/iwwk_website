@@ -28,21 +28,21 @@ export default function CareerCard({
   return (
     <motion.div
       whileHover={{ scale: 1.003 }}
-      className="p-4 w-full max-w-3xl bg-white rounded-2xl border-2 border-[var(--border-color)] shadow-lg"
+      className="p-4 w-full max-w-3xl bg-[var(--card-bg)] backdrop-blur-xl rounded-2xl border-2 border-[var(--border-color)] shadow-lg"
     >
       <div>
         <div className="flex gap-2">
           <div className="content-center w-14">{techicon}</div>
           <div>
-            <div className="text-xl font-medium text-black">{company}</div>
-            <div className="flex flex-col sm:flex-row text-slate-500">
+            <div className="text-xl font-medium text-[var(--foreground)]">{company}</div>
+            <div className="flex flex-col sm:flex-row text-slate-400">
               <h3>{title}</h3>
               <p className="hidden sm:inline">&nbsp;|&nbsp;</p>
               <h3>{date}</h3>
             </div>
           </div>
         </div>
-        <div className="pt-2 text-black">
+        <div className="pt-2 text-[var(--foreground)]">
           <ul className="list-disc list-inside">{bulletPointsWithIndex}</ul>
         </div>
       </div>

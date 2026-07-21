@@ -38,13 +38,13 @@ export default function Contact() {
   });
 
   return (
-    <div id="contact-container" className="bg-[var(--background)]">
+    <div id="contact-container" className="bg-transparent">
       <div
         id="contact"
         className="h-screen flex justify-center mx-auto p-4 pt-16 sm:pt-32"
       >
         <div className="w-full max-w-2xl flex flex-col gap-8 items-center">
-          <div className="w-full p-4 border-2 border-[var(--border-color)] shadow-md rounded-2xl">
+          <div className="w-full p-4 border-2 border-[var(--border-color)] bg-[var(--card-bg)] backdrop-blur-xl shadow-md rounded-2xl">
             <h1 className="text-center">Contact Me</h1>
             <form
               onSubmit={handleSubmit(onSubmit)}

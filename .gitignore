@@ -42,3 +42,4 @@ next-env.d.ts
 
 # misc
 /untracked/
+/threejs_progress_summary.md
