@@ -24,7 +24,7 @@ export default function SocialLinksMenu() {
         >
           <DropdownMenu.Item className="rounded-md text-sm text-[var(--foreground)] flex items-center gap-2 px-2 py-0.5 cursor-pointer border-2 border-transparent hover:border-[var(--border-color)]">
             <a
-              href="https://drive.google.com/file/d/10kaB53cURhF7okQ6WuRiWPnti2PPHPeQ/view?usp=sharing"
+              href="https://drive.google.com/file/d/1Hg5eU-fZuJNGryw3FsDlIICcQbx4CtJQ/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2"
